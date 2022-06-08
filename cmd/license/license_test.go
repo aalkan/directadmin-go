@@ -5,14 +5,33 @@ import (
 	"testing"
 )
 
-func TestGetAccountInfo(t *testing.T) {
+func TestGetLicense(t *testing.T) {
 	c := NewClient(&directadmin.Config{
 		Username: "#",
 		Password: "#",
 	})
+	params := &GetLicenseParam{
+		//LicenceId: "1234",
+		Ip: "192.1682.1.1",
+		//Active: "Y",
+		//SortBy: "ip",
+	}
 
-	response := responseMap
-	if err := c.request("GET", "/user_info.php",nil, response); err != nil {
+	_, err := c.GetLicense(params)
+	if err != nil {
+		t.Error(err)
+	}
+}
+
+func TestCreateLicense(t *testing.T) {
+	c := NewClient(&directadmin.Config{
+		Username: "#",
+		Password: "#",
+	})
+	params := &CreateLicenseParam{}
+
+	_, err := c.CreateLicense(params)
+	if err != nil {
 		t.Error(err)
 	}
 }
