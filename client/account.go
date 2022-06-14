@@ -1,4 +1,4 @@
-package license
+package client
 
 func (c *client) GetAccountInfo() (map[string]string, error) {
 	response := responseMap

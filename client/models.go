@@ -1,4 +1,4 @@
-package license
+package client
 
 type AccountInfoResponse struct {
 	Name    string `json:"name"`

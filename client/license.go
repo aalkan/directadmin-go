@@ -1,4 +1,4 @@
-package license
+package client
 
 var responseMap = make(map[string]string)
 

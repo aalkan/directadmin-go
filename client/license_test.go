@@ -1,4 +1,4 @@
-package license
+package client
 
 import (
 	"github.com/aalkan/directadmin-go"
