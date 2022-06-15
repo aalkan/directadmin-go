@@ -1,6 +1,6 @@
 # directadmin-go
 
-##Installation
+## Installation
 ```
 go get github.com/aalkan/directadmin-go
 ```
